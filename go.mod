@@ -3,7 +3,7 @@ module user-server
 go 1.18
 
 require (
-	github.com/PuckCao/proto v0.0.0-20231027135347-44d0065ac712
+	github.com/PuckCao/proto v0.0.0-20231027142644-e4df2b1b1622
 	google.golang.org/grpc v1.58.2
 )
 
