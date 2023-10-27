@@ -10,6 +10,18 @@ import (
 
 type userServer struct{}
 
+func (u *userServer) PhoneCheck(ctx context.Context, req *pb.PhoneCheckReq) (*pb.PhoneCheckResp, error) {
+	//TODO 发短信
+
+	//TODO 记录验证码到redis
+	return &pb.PhoneCheckResp{
+		ErrMsg: &pb.ErrMsg{
+			Code: 0,
+			Msg:  "success",
+		},
+	}, nil
+}
+
 func (u *userServer) Register(ctx context.Context, req *pb.RegisterReq) (*pb.RegisterResp, error) {
 	fmt.Println(req)
 	if req.Password == "123456" {

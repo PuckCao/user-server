@@ -2,7 +2,10 @@ module user-server
 
 go 1.18
 
-require github.com/PuckCao/proto v0.0.0-20230929115509-db82a68111f7
+require (
+	github.com/PuckCao/proto v0.0.0-20231027135347-44d0065ac712
+	google.golang.org/grpc v1.58.2
+)
 
 require (
 	github.com/golang/protobuf v1.5.3 // indirect
@@ -10,6 +13,5 @@ require (
 	golang.org/x/sys v0.10.0 // indirect
 	golang.org/x/text v0.11.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20230711160842-782d3b101e98 // indirect
-	google.golang.org/grpc v1.58.2 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
 )
